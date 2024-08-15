@@ -1,10 +1,10 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 
@@ -18,5 +18,13 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    color: white;
+    margin-bottom: 60px;
+    background-image: url('/Content/Images/qwqw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Goudy Old Style';
+    font-variant: small-caps;
 }
