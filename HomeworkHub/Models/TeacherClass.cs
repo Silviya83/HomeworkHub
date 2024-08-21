@@ -8,6 +8,7 @@ namespace HomeworkHub.Models
         [ForeignKey(nameof(Teacher))]
         public int TeacherId { get; set;}
 
+
         [ForeignKey(nameof(Class))]
         public int ClassId { get; set; }
     }

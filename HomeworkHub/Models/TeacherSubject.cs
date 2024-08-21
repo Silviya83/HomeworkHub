@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Humanizer.Localisation;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HomeworkHub.Models
 {
@@ -9,8 +10,11 @@ namespace HomeworkHub.Models
         [ForeignKey(nameof(Teacher))]
         public int TeacherId { get; set; }
 
+        public virtual Teacher? Teacher { get; set; }
 
         [ForeignKey(nameof(Subject))]
         public int SubjectId { get; set; }
+
+        public virtual Subject? Subject { get; set; }
     }
 }

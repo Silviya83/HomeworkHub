@@ -11,10 +11,11 @@ namespace HomeworkHub.Models
 
         [ForeignKey(nameof(Subject))]
         public int SubjectId { get; set; }
+        public virtual Subject? Subject { get; set; }
 
         [ForeignKey(nameof(Teacher))]
         public int TeacherId { get; set; }
 
-
+        public virtual Teacher? Teacher { get; set; }
     }
 }
